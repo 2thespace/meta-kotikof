@@ -10,7 +10,7 @@ python-is-python3 passwd openssl openssh-server openssh-client rsync
 
 RUN locale-gen en_US.UTF-8
 
-RUN git clone https://github.com/LuckfoxTECH/luckfox-pico.git
+RUN git clone https://github.com/LuckfoxTECH/luckfox-pico.git /home/user/luckfox-pico
 
 RUN useradd -m -u 1001 -U -s /bin/bash user
 
