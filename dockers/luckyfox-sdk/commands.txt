@@ -5,7 +5,7 @@
 docker run --rm -it  luckyfox-sdk:v0.1
 
 // still runing with build files inside
-docker run  --name luckyfox_detach  luckyfox-sdk:v0.1
+docker run  --name luckyfox_detach  luckyfox-sdk:v0.1 tail -f /dev/null
 // enter to detach
 docker exec -it luckyfox_detach /bin/bash
 
