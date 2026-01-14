@@ -14,6 +14,6 @@ RUN git clone https://github.com/LuckfoxTECH/luckfox-pico.git /home/user/luckfox
 
 RUN useradd -m -u 1001 -U -s /bin/bash user
 
-USER user
+USER root
 WORKDIR /home/user
 

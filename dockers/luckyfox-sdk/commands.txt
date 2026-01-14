@@ -1,10 +1,13 @@
- docker build -t luxyfox-sdk:v0.1 .
+ docker build -t luckyfox-sdk:v0.1 .
 
 
-docker run --rm \
---volume .\build:/home/user/poky/build:rw \
---volume .\ccashe:/home/user/ccashe:rw \
---volume .\downloads:/home/user/downloads:rw \
--it yocto-docker
+// delete after exit
+docker run --rm -it  luckyfox-sdk:v0.1
 
-docker run --rm --volume .\build:/home/user/poky/build:rw --volume .\ccashe:/home/user/ccashe:rw --volume .\downloads:/home/user/downloads:rw -it yocto-docker
+// still runing with build files inside
+docker run  --name luckyfox_detach  luckyfox-sdk:v0.1
+// enter to detach
+docker exec -it luckyfox_detach /bin/bash
+
+
+/home/user/luckfox-pico
