@@ -9,5 +9,8 @@ docker run  --name luckyfox_detach  luckyfox-sdk:v0.1 tail -f /dev/null
 // enter to detach
 docker exec -it luckyfox_detach /bin/bash
 
+https://wiki.luckfox.com/Luckfox-Pico-Ultra/Flash-image/
+https://wiki.luckfox.com/Luckfox-Pico-Ultra/Login
 
 /home/user/luckfox-pico
+
