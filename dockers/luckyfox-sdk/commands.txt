@@ -14,3 +14,6 @@ https://wiki.luckfox.com/Luckfox-Pico-Ultra/Login
 
 /home/user/luckfox-pico
 
+./build.sh kernel-config
+
+docker cp luckyfox_detach:/home/user/luckfox-pico/output .\artefacts\with_i2s
